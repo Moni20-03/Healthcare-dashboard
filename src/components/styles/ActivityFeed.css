@@ -1,0 +1,220 @@
+.activity-feed-wrapper {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.details-link {
+  position: absolute;
+  top: -8rem;
+  right: 0;
+  font-size: 0.9rem;
+  color: #324fb9;
+  cursor: pointer;
+}
+
+.activity-feed {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.appointment-count {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.activity-chart-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  gap: 16px; 
+}
+
+.day-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-pattern {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.chart-bar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+/* Bar Styles */
+.grey-long {
+  height: 80px;
+  background-color: #d3d3d3;
+}
+
+.blue-long {
+  margin-bottom: 10px;
+  height: 50px;
+  background-color: #324fb9;
+}
+
+.blue-short {
+  margin-bottom: 10px;
+  height: 50px;
+  background-color: #00F0FF;
+}
+
+.split-grey {
+  height: 50px;
+  background: linear-gradient(to top, #d3d3d3 50%, transparent 50%);
+}
+
+.composite-bar {
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  height: 60px;
+  background: linear-gradient(to top, #324fb9 50%, #00F0FF 50%);
+}
+
+.day-label {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  .activity-feed {
+    padding: 24px;
+  }
+
+  .activity-header h3 {
+    font-size: 1.4rem;
+  }
+
+  .appointment-count {
+    font-size: 1rem;
+  }
+
+  .day-label {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .activity-feed {
+    padding: 16px;
+  }
+
+  .activity-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .details-link {
+    font-size: 0.85rem;
+    display: none;
+  }
+
+  .activity-chart-group {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .day-label {
+    font-size: 0.75rem;
+  }
+
+  .bar-pattern {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .activity-feed {
+    padding: 14px;
+  }
+
+  .activity-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .details-link {
+    position: static;
+    font-size: 0.85rem;
+    margin-top: 6px;
+  }
+
+  .activity-chart-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .day-label {
+    font-size: 0.7rem;
+  }
+
+  .chart-bar {
+    width: 4px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .activity-feed {
+    padding: 12px;
+  }
+
+  .activity-header h3 {
+    font-size: 1rem;
+  }
+
+  .appointment-count {
+    font-size: 0.8rem;
+  }
+
+  .details-link {
+    font-size: 0.8rem;
+  }
+
+  .activity-chart-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .day-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .bar-pattern {
+    gap: 4px;
+  }
+
+  .chart-bar {
+    width: 3px;
+  }
+
+  .day-label {
+    font-size: 0.65rem;
+  }
+}

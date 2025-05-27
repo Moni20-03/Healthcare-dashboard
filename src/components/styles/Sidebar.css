@@ -1,0 +1,103 @@
+.sidebar-content{
+    width: 220px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+  }
+  
+  .healthcare-title {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .health {
+    font-size: 22px;
+    font-weight: 600;
+    color: #00F0FF;
+  }
+  
+  .care {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+  
+  .sidebar-section h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888888;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-section ul li {
+    padding: 10px 0;
+    color: #333333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .sidebar-section ul li:hover {
+    color: #2b45a1;
+  }
+  
+  .setting ul li
+  {
+    margin-top: 120%;
+  }
+  .icon {
+    margin-right: 12px;
+    color: #666666;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 15px 20px 0 20px;
+    color: #333333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    cursor: pointer;
+  }
+  
+
+  .sidebar.closed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      position: absolute;
+      z-index: 100;
+      background-color: white;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    
+    .sidebar.open {
+      width: 250px;
+    }
+  }

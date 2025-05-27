@@ -1,0 +1,193 @@
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.anatomy-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.human-body-container {
+  position: relative;
+  width: 250px;
+}
+
+.human-body {
+  position: relative;
+  width: 100%;
+}
+
+.human-body img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.body-card {
+  position: absolute;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 2;
+}
+
+.body-card .card-title {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.body-card .card-date {
+  display: block;
+  color: gray;
+  font-size: 12px;
+}
+
+.heart-card {
+  background-color: #324fb9;
+  color: white;
+  top: 25%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.leg-card {
+  background-color: #00F0FF;
+  color: #324fb9;
+  bottom: 25%;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+
+.health-status-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  width: 100%;
+  min-height: 72px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 10%;
+}
+
+.health-status-card .card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.health-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.health-status-card .organ-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.health-status-card .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.health-status-card .organ {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 2px;
+  margin-top: 5px;
+  line-height: 1.3;
+}
+
+.health-status-card .date {
+  color: gray;
+  font-size: 12px;
+  margin-top:10px;
+  margin-left: 0.2rem; 
+  line-height: 1.3;
+}
+
+.health-status-card .status-bar-container {
+  width: calc(100% - 32px);
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.health-status-card .status-bar {
+  width: 70%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #FF4D4F;
+  position: relative;
+  transition: width 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.health-status-card:hover .status-bar {
+  box-shadow: 0 0 4px rgba(255,77,79,0.4);
+}
+
+@media (max-width: 480px) {
+  .anatomy-section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .human-body-container {
+    width: 180px;
+  }
+
+  .body-card {
+    padding: 6px 10px;
+    min-width: 100px;
+  }
+
+  .body-card .card-title {
+    font-size: 12px;
+  }
+
+  .body-card .card-date {
+    font-size: 10px;
+  }
+
+  .health-status-card {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    padding: 15px;
+  }
+
+  .health-status-card .organ {
+    font-size: 0.95rem;
+  }
+
+  .health-status-card .status-bar-container {
+    width: calc(100% - 24px);
+    bottom: 8px;
+    left: 12px;
+  }
+}
